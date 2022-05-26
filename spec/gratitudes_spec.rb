@@ -1,13 +1,15 @@
-require "gratitudes"
+# frozen_string_literal: true
+
+require 'gratitudes'
 
 RSpec.describe Gratitudes do
-    it "it asks what the user is grateful for" do
-      gratitude = Gratitudes.new
-      gratitude.add("air")
-      result = gratitude.format()
-      expect(result). to eq "Be grateful for: air"
-    end
-end 
+  it 'it asks what the user is grateful for' do
+    gratitude = Gratitudes.new
+    gratitude.add('air')
+    result = gratitude.format
+    expect(result).to eq 'Be grateful for: air'
+  end
+end
 
 # require "gratitudes"
 # RSpec.describe Gratitudes do

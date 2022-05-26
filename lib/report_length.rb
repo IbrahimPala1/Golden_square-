@@ -1,4 +1,6 @@
+# frozen_string_literal: true
+
 def report_length(str)
-    length = str.length
-    return "This string was #{length} characters long."
+  length = str.length
+  "This string was #{length} characters long."
 end
